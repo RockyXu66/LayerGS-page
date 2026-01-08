@@ -6,7 +6,7 @@
   
   <!-- Primary Meta Tags -->
   <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
+  <meta name="title" content="LayerGS">
   <!-- TODO: Write a compelling 150-160 character description of your research -->
   <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
   <!-- TODO: Add 5-10 relevant keywords for your research area -->
@@ -74,7 +74,7 @@
 
 
   <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
+  <title>LayerGS</title>
   
   <!-- Favicon and App Icons -->
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
@@ -187,7 +187,7 @@
   </button>
 
   <!-- More Works Dropdown -->
-  <div class="more-works-container">
+  <!-- <div class="more-works-container">
     <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
       <i class="fas fa-flask"></i>
       More Works
@@ -201,19 +201,14 @@
         </button>
       </div>
       <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
         <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
           <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
             <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
             <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
             <span class="work-venue">Conference/Journal 2024</span>
           </div>
           <i class="fas fa-external-link-alt"></i>
         </a>
-        <!-- TODO: Add more related works or remove extra items -->
         <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
           <div class="work-info">
             <h5>Paper Title 2</h5>
@@ -232,7 +227,7 @@
         </a>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <main id="main-content">
   <section class="hero">
@@ -241,23 +236,21 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">LayerGS: Decomposition and Inpainting of Layered 3D Human Avatars via 2D Gaussian Splatting</h1>
             <div class="is-size-5 publication-authors">
               <!-- TODO: Replace with your paper authors and their personal links -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="https://rockyxu66.github.io" target="_blank">Yinghan Xu</a>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                  <a href="https://www.scss.tcd.ie/john.dingliana/" target="_blank">John Dingliana</a>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
                     <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
+                    <span class="author-block">Trinity College Dublin<!-- <br>Conference name and year --></span>
                     <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
                   </div>
 
                   <div class="column has-text-centered">
@@ -284,9 +277,19 @@
                     </a>
                   </span>
 
+                  <span class="link-block">
+                    <a href="https://youtu.be/hAAQ-tCM2-U?si=KmwLWy4I_G_XSErF" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                    </a>
+                  </span>
+
                   <!-- TODO: Replace with your GitHub repository URL -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/RockyXu66/LayerGS" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -319,21 +322,23 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
+      <!-- <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
         <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
+      </video> -->
+      <img id="teaser" src="./static/images/teaser-v4.jpeg" alt="Teaser" height="100%">
       <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      <h2 class="subtitle has-text-centered" style="width: 110%; margin-left: -5%;">
+        Given a 3D human scan or multi-view images of a static person, our framework decomposes and inpaints the subject into multiple canonical Gaussian layers for animation and 3D virtual try-on.
       </h2>
     </div>
   </div>
 </section>
 <!-- End teaser video -->
 
+<hr class="section-divider">
+
 <!-- Paper abstract -->
-<section class="section hero is-light">
+<section class="section hero ">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -341,7 +346,7 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            We propose a novel framework for decomposing arbitrarily posed humans into animatable multi-layered 3D human avatars, separating the body and garments. Conventional single-layer reconstruction methods lock clothing to one identity, while prior multi-layer approaches struggle with occluded regions. We overcome both limitations by encoding each layer as a set of 2D Gaussians for accurate geometry and photorealistic rendering, and inpainting hidden regions with a pretrained 2D diffusion model via score-distillation sampling (SDS). Our three-stage training strategy first reconstructs the coarse canonical garment via single-layer reconstruction, followed by multi-layer training to jointly recover the inner-layer body and outer-layer garment details. Experiments on two 3D human benchmark datasets (4D-Dress, Thuman2.0) show that our approach achieves better rendering quality and layer decomposition and recomposition than the previous state-of-the-art, enabling realistic virtual try-on under novel viewpoints and poses, and advancing practical creation of high-fidelity 3D human assets for immersive applications.
           </p>
         </div>
       </div>
@@ -350,36 +355,32 @@
 </section>
 <!-- End paper abstract -->
 
+<hr class="section-divider">
 
 <!-- Image carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
-        <!-- TODO: Replace with your research result images -->
         <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
         <h2 class="subtitle has-text-centered">
           First image description.
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
         <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
           Second image description.
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
         <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
          Third image description.
        </h2>
      </div>
      <div class="item">
-      <!-- Your image here -->
       <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
       <h2 class="subtitle has-text-centered">
         Fourth image description.
@@ -388,87 +389,219 @@
   </div>
 </div>
 </div>
-</section>
+</section> -->
 <!-- End image carousel -->
 
 
 
 
 <!-- Youtube video -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <!-- Paper video. -->
       <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
           <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
             <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End youtube video -->
 
 
-<!-- Video carousel -->
 <section class="hero is-small">
   <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
+    <div class="container" style="width: 80%; max-width: 80%; margin: 0 auto;">
+      <h2 class="subtitle has-text-centered" style="font-family: 'Poppins', sans-serif; font-weight: 600; margin-bottom: 2rem; font-size: 2.0em;">
+        Decomposition Results
+      </h2>
+
+      <div class="content has-text-justified" style="margin-bottom: 1rem;">
+        <p>
+          From left to right: Recomposed inner layer and outer layer, decomposed inner layer, and decomposed outer layer.
+        </p>
+      </div>
+      
+      <div id="decomposition-carousel" class="carousel results-carousel">        
+        <div class="item item-family">
+          <video poster="static/videos/decomposition/00122/00122.jpg" id="decomposition-video-00122" autoplay controls muted loop playsinline height="100%">
+            <source src="static/videos/decomposition/00122/00122.mp4" type="video/mp4">
+          </video>
+        </div>   
+        <div class="item item-family">
+          <video poster="static/videos/decomposition/00127/00127.jpg" id="decomposition-video-00127" autoplay controls muted loop playsinline height="100%">
+            <source src="static/videos/decomposition/00127/00127.mp4" type="video/mp4">
           </video>
         </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
+        <div class="item item-family">
+          <video poster="static/videos/decomposition/00152/00152.jpg" id="decomposition-video-00152" autoplay controls muted loop playsinline height="100%">
+            <source src="static/videos/decomposition/00152/00152.mp4" type="video/mp4">
           </video>
         </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
+        <div class="item item-family">
+          <video poster="static/videos/decomposition/00174/00174.jpg" id="decomposition-video-00174" autoplay controls muted loop playsinline height="100%">
+            <source src="static/videos/decomposition/00174/00174.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-family">
+          <video poster="static/videos/decomposition/00175/00175.jpg" id="decomposition-video-00175" autoplay controls muted loop playsinline height="100%">
+            <source src="static/videos/decomposition/00175/00175.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-family">
+          <video poster="static/videos/decomposition/00190/00190.jpg" id="decomposition-video-00190" autoplay controls muted loop playsinline height="100%">
+            <source src="static/videos/decomposition/00190/00190.mp4" type="video/mp4">
           </video>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
 
+<hr class="section-divider">
 
+<section class="section hero ">
+  <div class="container is-max-desktop">
+    <h2 class="subtitle has-text-centered" style="font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 50px; margin-bottom: 20px; text-align: center; font-size: 2.0em;">
+      Qualitative Comparisons
+    </h2>
 
+    <div class="gif-container" style="display: flex; justify-content: center; gap: 20px; max-width: 1200px; flex-wrap: wrap;margin: auto;">
+      <div class="video-viewer-container" style="text-align: center; max-width: 1000px;margin: auto;">
+        <div class="content has-text-justified" style="margin-bottom: 1rem;">
+          <p>
+            <strong>Comparison between GALA and our method:</strong> The top row shows results from GALA trained with a 3D scan, and the bottom row from our approach, which does not require a 3D scan.
+          </p>
+        </div>
 
+        <div class="container" style="margin-bottom: 3rem;">
+          <div id="comparison-gala-carousel" class="carousel results-carousel">        
+            <div class="item item-family">
+              <video poster="" id="comparison-gala-video-1" autoplay controls muted loop playsinline height="100%">
+                <source src="static/videos/comparison/00174-comp-2.mp4"
+                        type="video/mp4">
+              </video>
+            </div>   
+            <div class="item item-family">
+              <video poster="" id="comparison-gala-video-2" autoplay controls muted loop playsinline height="100%">
+                <source src="static/videos/comparison/00175-comp-2.mp4"
+                        type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
 
+        <div class="content has-text-justified" style="margin-top: 3rem;">
+          <p>
+            <strong>Comparison between VTON360 and our method</strong> 
+          </p>
+        </div>
+
+        <div class="container">
+          <div id="comparison-vton-carousel" class="carousel results-carousel">        
+            <div class="item item-family">
+              <video poster="static/videos/comparison/VTON360/body0030-garment00190/body0030-garment00190.jpg" id="comparison-vton-video-1" autoplay controls muted loop playsinline height="100%">
+                <source src="static/videos/comparison/VTON360/body0030-garment00190/body0030-garment00190.mp4"
+                        type="video/mp4">
+              </video>
+            </div>   
+            <div class="item item-family">
+              <video poster="static/videos/comparison/VTON360/body0095-garment00175/body0095-garment00175.jpg" id="comparison-vton-video-2" autoplay controls muted loop playsinline height="100%">
+                <source src="static/videos/comparison/VTON360/body0095-garment00175/body0095-garment00175.mp4"
+                        type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<section class="hero is-small">
+  <h2 class="subtitle has-text-centered" style="font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 50px; margin-bottom: 20px; text-align: center; font-size: 2.0em;">
+    Custom Monocular Video Decomposition
+  </h2>
+
+  <div class="gif-container" style="display: flex; justify-content: center; gap: 20px; max-width: 1200px; flex-wrap: wrap;margin: auto;">
+    <div class="video-viewer-container" style="text-align: center; max-width: 1000px;margin: auto;">
+      <div class="content has-text-justified">
+        <!-- <p>
+        Our method can obtain high-quality normal, which can be used for real-time image-based <span style="color: red;">relighting</span>.
+        </p> -->
+        <video poster="static/videos/Monocular-Video-Demo.jpg" id="tree1" autoplay controls muted loop style="width: 100%; max-width: 1200px;">
+          <source src="static/videos/Monocular-Video-Demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<section class="hero is-small ">
+  <h2 class="subtitle has-text-centered" style="font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 50px; margin-bottom: 20px; text-align: center; font-size: 2.0em;">
+    Virtual Try-On
+  </h2>
+
+  <div class="gif-container" style="display: flex; justify-content: center; gap: 20px; max-width: 1200px; flex-wrap: wrap;margin: auto;">
+    <div class="video-viewer-container" style="text-align: center; max-width: 1000px;margin: auto;">
+      <div class="content has-text-justified">
+        <!-- <p>
+        Our method can obtain high-quality normal, which can be used for real-time image-based <span style="color: red;">relighting</span>.
+        </p> -->
+        <video poster="static/videos/virtual-tryon.jpg" id="tree1" autoplay controls muted loop style="width: 100%; max-width: 1200px;">
+          <source src="static/videos/virtual-tryon.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<section class="hero is-small">
+  <h2 class="subtitle has-text-centered" style="font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 50px; margin-bottom: 20px; text-align: center; font-size: 2.0em;">
+    Video Presentation
+  </h2>
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/hAAQ-tCM2-U?si=KesBB-O_HM_xUWXy" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small ">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
 
-      <!-- TODO: Replace with your poster PDF -->
       <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
           </iframe>
         
-      </div>
     </div>
-  </section>
+  </div>
+</section> -->
 <!--End paper poster -->
 
-
+<hr class="section-divider">
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
